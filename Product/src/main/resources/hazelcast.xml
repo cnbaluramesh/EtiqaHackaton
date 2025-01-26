@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast xmlns="http://www.hazelcast.com/schema/config"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.hazelcast.com/schema/config
+                               https://hazelcast.com/schema/config/hazelcast-config-5.5.xsd">
+    <cluster-name>dev</cluster-name>
+    <network>
+        <port auto-increment="true">5701</port>
+        <join>
+            <multicast enabled="false"/>
+            <tcp-ip enabled="true">
+                <member>127.0.0.1</member>
+            </tcp-ip>
+        </join>
+    </network>
+    <map name="default">
+        <backup-count>1</backup-count>
+        <time-to-live-seconds>3600</time-to-live-seconds>
+    </map>
+    <management-center/>
+
+    <metrics>
+        <jmx enabled="true"/>
+    </metrics>
+</hazelcast>
