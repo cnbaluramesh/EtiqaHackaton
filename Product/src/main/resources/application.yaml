@@ -14,10 +14,11 @@ server:
 
 springdoc:
   api-docs:
-    path: /swagger-doc/v3/api-docs
+    path: /v3/api-docs
   swagger-ui:
-    path: /swagger-doc/swagger-ui.html
+    path: /swagger-ui/index.html
 
 logging:
   level:
-    com.hazelcast: DEBUG
+    #com.hazelcast: DEBUG
+    org.springdoc: DEBUG

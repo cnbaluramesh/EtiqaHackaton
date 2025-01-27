@@ -58,8 +58,8 @@ The **Customer Order Management API** provides endpoints for managing customers 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/customer-order-management.git
-cd customer-order-management
+git clone https://github.com/cnbaluramesh/EtiqaHackaton.git
+cd EtiqaHackaton
 ```
 
 ### 2. Configure Application Properties

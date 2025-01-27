@@ -48,8 +48,8 @@ This project is a Spring Boot application for demonstrating CRUD operations usin
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/cnbaluramesh/EtiqaHackaton.git
+   cd EtiqaHackaton
    ```
 
 2. Configure your `application.yaml` with the necessary database and cache configurations.
@@ -66,7 +66,7 @@ This project is a Spring Boot application for demonstrating CRUD operations usin
 
 5. Access the API documentation at:
    ```
-   http://localhost:7070/swagger-ui.html
+   http://localhost:7070/swagger-ui/index.html 
    ```
 
 ## Testing

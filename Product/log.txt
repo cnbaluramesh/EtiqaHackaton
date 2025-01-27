@@ -22609,3 +22609,1394 @@ Members {size:1, ver:1} [
 2025-01-26 23:12:06 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
 2025-01-26 23:12:06 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 38 ms.
 2025-01-26 23:12:06 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:00:11 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 56740 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:00:11 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 56740 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:00:11 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:00:11 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:00:12 DEBUG c.h.i.c.AbstractYamlConfigRootTagRecognizer - An exception is encountered while processing the provided YAML configuration
+com.hazelcast.internal.yaml.YamlException: An error occurred while loading and parsing the YAML stream
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:55)
+	at com.hazelcast.internal.config.AbstractYamlConfigRootTagRecognizer.isRecognized(AbstractYamlConfigRootTagRecognizer.java:60)
+	at com.hazelcast.internal.config.AbstractConfigRecognizer.isRecognized(AbstractConfigRecognizer.java:40)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition$HazelcastClientValidation.clientConfigOutcome(HazelcastClientConfigAvailableCondition.java:66)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition.getMatchOutcome(HazelcastClientConfigAvailableCondition.java:49)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:233)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:413)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:836)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:833)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:803)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.hazelcast.internal.yaml.YamlException: The provided document is not a Map, and rootName is defined.
+	at com.hazelcast.internal.yaml.YamlDomBuilder.build(YamlDomBuilder.java:40)
+	at com.hazelcast.internal.yaml.YamlLoader.buildDom(YamlLoader.java:151)
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:53)
+	... 115 common frames omitted
+2025-01-27 08:00:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:00:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 186 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:00:13 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:00:13 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:00:14 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:00:15 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:00:15 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:00:15 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Trying to bind inet socket address: 0.0.0.0/0.0.0.0:5701
+2025-01-27 08:00:15 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Bind successful to inet socket address: /[0:0:0:0:0:0:0:0]:5701
+2025-01-27 08:00:15 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Picked [127.0.0.1]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2025-01-27 08:00:15 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:00:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:00:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:00:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:00:15 DEBUG com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Configured Hazelcast Serialization version: 1
+2025-01-27 08:00:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:00:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:00:16 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:16 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:16 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:16 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:16 DEBUG c.h.i.m.impl.MetricsConfigHelper - [127.0.0.1]:5701 [dev] [5.5.0] Collecting debug metrics and sending to diagnostics is disabled
+2025-01-27 08:00:16 DEBUG c.h.s.i.o.impl.BackpressureRegulator - [127.0.0.1]:5701 [dev] [5.5.0] Backpressure is disabled
+2025-01-27 08:00:16 DEBUG c.h.s.i.o.i.InboundResponseHandlerSupplier - [127.0.0.1]:5701 [dev] [5.5.0] Running with 2 response threads
+2025-01-27 08:00:16 DEBUG c.h.i.s.tcp.LocalAddressRegistry - [127.0.0.1]:5701 [dev] [5.5.0] LinkedAddresses{primaryAddress=[127.0.0.1]:5701, allLinkedAddresses=[[fe80:0:0:0:936e:c24d:68a8:779b%eth3]:5701, [fe80:0:0:0:600e:e95d:ab13:8224%eth21]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16%eth4]:5701, [192.168.0.105]:5701, [fe80:0:0:0:d76c:b378:f034:a23%wlan3]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5]:5701, [fe80:0:0:0:d76c:b378:f034:a23]:5701, [fe80:0:0:0:600e:e95d:ab13:8224]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2]:5701, [172.21.48.1]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2%wlan4]:5701, [172.20.144.1]:5701, [fe80:0:0:0:936e:c24d:68a8:779b]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2%wlan0]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5%eth11]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16]:5701, [127.0.0.1]:5701, [0:0:0:0:0:0:0:1]:5701]} are registered for the local member with local uuid=d8f8e5e2-0b67-47c5-9e71-c1df26db21fa
+2025-01-27 08:00:16 DEBUG com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] 
+Security recommendations and their status:
+  [ ] Use a custom cluster name
+  [X] Disable member multicast discovery/join method
+  [ ] Use advanced networking, separate client and member sockets
+  [ ] Bind Server sockets to a single network interface (disable hazelcast.socket.server.bind.any)
+  [ ] Allow Management Center operations only from specified remote addresses (use management-center/trusted-interfaces configuration)
+  [X] Disable scripting in the Management Center
+  [X] Disable console in the Management Center
+  [ ] Enable Security (Enterprise)
+  [ ] Use TLS communication protection (Enterprise)
+  [ ] Enable auditlog (Enterprise)
+Check the hazelcast-security-hardened.xml/yaml example config file to find why and how to configure these security related settings.
+
+2025-01-27 08:00:16 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:00:17 DEBUG c.h.i.metrics.impl.MetricsService - [127.0.0.1]:5701 [dev] [5.5.0] Configuring metrics collection, collection interval=5 seconds, retention=5 seconds, publishers=[Management Center Publisher, JMX Publisher]
+2025-01-27 08:00:17 DEBUG c.h.s.i.o.impl.OperationExecutorImpl - [127.0.0.1]:5701 [dev] [5.5.0] Starting 20 partition threads and 11 generic threads (1 dedicated for priority tasks)
+2025-01-27 08:00:17 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:00:17 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:00:17 DEBUG c.h.i.p.InternalPartitionService - [127.0.0.1]:5701 [dev] [5.5.0] Adding Member [127.0.0.1]:5701 - d8f8e5e2-0b67-47c5-9e71-c1df26db21fa this
+2025-01-27 08:00:17 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] TcpIpConnectionManager configured with Non Blocking IO-threading model: 4 input threads and 4 output threads
+2025-01-27 08:00:17 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] write through enabled:true
+2025-01-27 08:00:17 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] IO threads selector mode is SELECT
+2025-01-27 08:00:17 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:00:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is local? true
+2025-01-27 08:00:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:00:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:00:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] NOT sending master question to blacklisted endpoints: {}
+2025-01-27 08:00:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5703
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5702
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:17 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:00:17 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:00:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:00:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] This node will assume master role since none of the possible members accepted join request.
+2025-01-27 08:00:18 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to [127.0.0.1]:5701
+2025-01-27 08:00:18 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Local member list join version is set to 1
+2025-01-27 08:00:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] PostJoin master: [127.0.0.1]:5701, isMaster: true
+2025-01-27 08:00:18 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - d8f8e5e2-0b67-47c5-9e71-c1df26db21fa this
+]
+
+2025-01-27 08:00:18 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:00:18 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:18 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:18 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 7.564 seconds (process running for 8.912)
+2025-01-27 08:00:18 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 7.564 seconds (process running for 8.912)
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:00:20 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:00:20 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:00:20 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:00:20 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:00:20 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:00:20 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:00:20 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:00:20 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:00:20 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:00:20 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:00:20 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:00:20 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 51 ms.
+2025-01-27 08:00:20 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:00:27 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 24812 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:00:27 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 24812 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:00:27 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:00:27 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:00:27 DEBUG c.h.i.c.AbstractYamlConfigRootTagRecognizer - An exception is encountered while processing the provided YAML configuration
+com.hazelcast.internal.yaml.YamlException: An error occurred while loading and parsing the YAML stream
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:55)
+	at com.hazelcast.internal.config.AbstractYamlConfigRootTagRecognizer.isRecognized(AbstractYamlConfigRootTagRecognizer.java:60)
+	at com.hazelcast.internal.config.AbstractConfigRecognizer.isRecognized(AbstractConfigRecognizer.java:40)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition$HazelcastClientValidation.clientConfigOutcome(HazelcastClientConfigAvailableCondition.java:66)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition.getMatchOutcome(HazelcastClientConfigAvailableCondition.java:49)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:233)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:413)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:836)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:833)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:803)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at my.etiqa.demo.EtiqaProductApplication.main(EtiqaProductApplication.java:25)
+Caused by: com.hazelcast.internal.yaml.YamlException: The provided document is not a Map, and rootName is defined.
+	at com.hazelcast.internal.yaml.YamlDomBuilder.build(YamlDomBuilder.java:40)
+	at com.hazelcast.internal.yaml.YamlLoader.buildDom(YamlLoader.java:151)
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:53)
+	... 35 common frames omitted
+2025-01-27 08:00:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:00:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:00:29 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:00:29 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:00:29 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:00:30 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:00:30 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:00:30 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Trying to bind inet socket address: 0.0.0.0/0.0.0.0:5701
+2025-01-27 08:00:30 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Bind successful to inet socket address: /[0:0:0:0:0:0:0:0]:5701
+2025-01-27 08:00:30 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Picked [127.0.0.1]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2025-01-27 08:00:30 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:00:30 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:00:30 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:00:30 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:00:30 DEBUG com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Configured Hazelcast Serialization version: 1
+2025-01-27 08:00:30 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:00:30 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:00:30 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:30 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:30 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:30 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:00:30 DEBUG c.h.i.m.impl.MetricsConfigHelper - [127.0.0.1]:5701 [dev] [5.5.0] Collecting debug metrics and sending to diagnostics is disabled
+2025-01-27 08:00:30 DEBUG c.h.s.i.o.impl.BackpressureRegulator - [127.0.0.1]:5701 [dev] [5.5.0] Backpressure is disabled
+2025-01-27 08:00:30 DEBUG c.h.s.i.o.i.InboundResponseHandlerSupplier - [127.0.0.1]:5701 [dev] [5.5.0] Running with 2 response threads
+2025-01-27 08:00:30 DEBUG c.h.i.s.tcp.LocalAddressRegistry - [127.0.0.1]:5701 [dev] [5.5.0] LinkedAddresses{primaryAddress=[127.0.0.1]:5701, allLinkedAddresses=[[fe80:0:0:0:936e:c24d:68a8:779b%eth3]:5701, [fe80:0:0:0:600e:e95d:ab13:8224%eth21]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16%eth4]:5701, [192.168.0.105]:5701, [fe80:0:0:0:d76c:b378:f034:a23%wlan3]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5]:5701, [fe80:0:0:0:d76c:b378:f034:a23]:5701, [fe80:0:0:0:600e:e95d:ab13:8224]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2]:5701, [172.21.48.1]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2%wlan4]:5701, [172.20.144.1]:5701, [fe80:0:0:0:936e:c24d:68a8:779b]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2%wlan0]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5%eth11]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16]:5701, [127.0.0.1]:5701, [0:0:0:0:0:0:0:1]:5701]} are registered for the local member with local uuid=1526d106-5693-44c2-a232-8669747c56b3
+2025-01-27 08:00:30 DEBUG com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] 
+Security recommendations and their status:
+  [ ] Use a custom cluster name
+  [X] Disable member multicast discovery/join method
+  [ ] Use advanced networking, separate client and member sockets
+  [ ] Bind Server sockets to a single network interface (disable hazelcast.socket.server.bind.any)
+  [ ] Allow Management Center operations only from specified remote addresses (use management-center/trusted-interfaces configuration)
+  [X] Disable scripting in the Management Center
+  [X] Disable console in the Management Center
+  [ ] Enable Security (Enterprise)
+  [ ] Use TLS communication protection (Enterprise)
+  [ ] Enable auditlog (Enterprise)
+Check the hazelcast-security-hardened.xml/yaml example config file to find why and how to configure these security related settings.
+
+2025-01-27 08:00:30 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:00:30 DEBUG c.h.i.metrics.impl.MetricsService - [127.0.0.1]:5701 [dev] [5.5.0] Configuring metrics collection, collection interval=5 seconds, retention=5 seconds, publishers=[Management Center Publisher, JMX Publisher]
+2025-01-27 08:00:30 DEBUG c.h.s.i.o.impl.OperationExecutorImpl - [127.0.0.1]:5701 [dev] [5.5.0] Starting 20 partition threads and 11 generic threads (1 dedicated for priority tasks)
+2025-01-27 08:00:30 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:00:30 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:00:30 DEBUG c.h.i.p.InternalPartitionService - [127.0.0.1]:5701 [dev] [5.5.0] Adding Member [127.0.0.1]:5701 - 1526d106-5693-44c2-a232-8669747c56b3 this
+2025-01-27 08:00:30 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] TcpIpConnectionManager configured with Non Blocking IO-threading model: 4 input threads and 4 output threads
+2025-01-27 08:00:30 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] write through enabled:true
+2025-01-27 08:00:30 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] IO threads selector mode is SELECT
+2025-01-27 08:00:30 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:00:31 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is local? true
+2025-01-27 08:00:31 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:00:31 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:00:31 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] NOT sending master question to blacklisted endpoints: {}
+2025-01-27 08:00:31 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5703
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:31 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5702
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:31 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:00:31 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:31 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:32 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:00:32 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:00:32 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] This node will assume master role since none of the possible members accepted join request.
+2025-01-27 08:00:32 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to [127.0.0.1]:5701
+2025-01-27 08:00:32 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Local member list join version is set to 1
+2025-01-27 08:00:32 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] PostJoin master: [127.0.0.1]:5701, isMaster: true
+2025-01-27 08:00:32 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 1526d106-5693-44c2-a232-8669747c56b3 this
+]
+
+2025-01-27 08:00:32 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:00:32 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:00:32 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:00:32 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 7070 (http)
+2025-01-27 08:00:32 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 5.139 seconds (process running for 5.497)
+2025-01-27 08:00:32 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 5.139 seconds (process running for 5.497)
+2025-01-27 08:01:17 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 887 ms
+2025-01-27 08:01:30 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Sending member list to the non-master nodes: 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 1526d106-5693-44c2-a232-8669747c56b3 this
+]
+
+2025-01-27 08:02:30 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Sending member list to the non-master nodes: 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 1526d106-5693-44c2-a232-8669747c56b3 this
+]
+
+2025-01-27 08:02:38 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:02:38 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:02:38 INFO  o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 08:02:38 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:02:38 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:02:38 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:02:38 INFO  o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-01-27 08:02:38 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:02:38 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:02:38 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:02:38 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 17 ms.
+2025-01-27 08:02:38 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:02:55 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 59432 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:02:55 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 59432 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:02:55 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:02:55 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:02:56 DEBUG c.h.i.c.AbstractYamlConfigRootTagRecognizer - An exception is encountered while processing the provided YAML configuration
+com.hazelcast.internal.yaml.YamlException: An error occurred while loading and parsing the YAML stream
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:55)
+	at com.hazelcast.internal.config.AbstractYamlConfigRootTagRecognizer.isRecognized(AbstractYamlConfigRootTagRecognizer.java:60)
+	at com.hazelcast.internal.config.AbstractConfigRecognizer.isRecognized(AbstractConfigRecognizer.java:40)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition$HazelcastClientValidation.clientConfigOutcome(HazelcastClientConfigAvailableCondition.java:66)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition.getMatchOutcome(HazelcastClientConfigAvailableCondition.java:49)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:233)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:413)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:836)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:833)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:803)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.hazelcast.internal.yaml.YamlException: The provided document is not a Map, and rootName is defined.
+	at com.hazelcast.internal.yaml.YamlDomBuilder.build(YamlDomBuilder.java:40)
+	at com.hazelcast.internal.yaml.YamlLoader.buildDom(YamlLoader.java:151)
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:53)
+	... 115 common frames omitted
+2025-01-27 08:02:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:02:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:02:57 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:02:58 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:02:58 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:02:59 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:02:59 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:02:59 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Trying to bind inet socket address: 0.0.0.0/0.0.0.0:5701
+2025-01-27 08:02:59 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Bind successful to inet socket address: /[0:0:0:0:0:0:0:0]:5701
+2025-01-27 08:02:59 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Picked [127.0.0.1]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2025-01-27 08:02:59 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:02:59 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:02:59 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:02:59 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:02:59 DEBUG com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Configured Hazelcast Serialization version: 1
+2025-01-27 08:02:59 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:02:59 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:03:00 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:00 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:00 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:00 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:00 DEBUG c.h.i.m.impl.MetricsConfigHelper - [127.0.0.1]:5701 [dev] [5.5.0] Collecting debug metrics and sending to diagnostics is disabled
+2025-01-27 08:03:00 DEBUG c.h.s.i.o.impl.BackpressureRegulator - [127.0.0.1]:5701 [dev] [5.5.0] Backpressure is disabled
+2025-01-27 08:03:00 DEBUG c.h.s.i.o.i.InboundResponseHandlerSupplier - [127.0.0.1]:5701 [dev] [5.5.0] Running with 2 response threads
+2025-01-27 08:03:00 DEBUG c.h.i.s.tcp.LocalAddressRegistry - [127.0.0.1]:5701 [dev] [5.5.0] LinkedAddresses{primaryAddress=[127.0.0.1]:5701, allLinkedAddresses=[[fe80:0:0:0:936e:c24d:68a8:779b%eth3]:5701, [fe80:0:0:0:600e:e95d:ab13:8224%eth21]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16%eth4]:5701, [192.168.0.105]:5701, [fe80:0:0:0:d76c:b378:f034:a23%wlan3]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5]:5701, [fe80:0:0:0:d76c:b378:f034:a23]:5701, [fe80:0:0:0:600e:e95d:ab13:8224]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2]:5701, [172.21.48.1]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2%wlan4]:5701, [172.20.144.1]:5701, [fe80:0:0:0:936e:c24d:68a8:779b]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2%wlan0]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5%eth11]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16]:5701, [127.0.0.1]:5701, [0:0:0:0:0:0:0:1]:5701]} are registered for the local member with local uuid=f22f7eca-3b1a-4d93-926a-74bcddfaac2d
+2025-01-27 08:03:00 DEBUG com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] 
+Security recommendations and their status:
+  [ ] Use a custom cluster name
+  [X] Disable member multicast discovery/join method
+  [ ] Use advanced networking, separate client and member sockets
+  [ ] Bind Server sockets to a single network interface (disable hazelcast.socket.server.bind.any)
+  [ ] Allow Management Center operations only from specified remote addresses (use management-center/trusted-interfaces configuration)
+  [X] Disable scripting in the Management Center
+  [X] Disable console in the Management Center
+  [ ] Enable Security (Enterprise)
+  [ ] Use TLS communication protection (Enterprise)
+  [ ] Enable auditlog (Enterprise)
+Check the hazelcast-security-hardened.xml/yaml example config file to find why and how to configure these security related settings.
+
+2025-01-27 08:03:00 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:03:00 DEBUG c.h.i.metrics.impl.MetricsService - [127.0.0.1]:5701 [dev] [5.5.0] Configuring metrics collection, collection interval=5 seconds, retention=5 seconds, publishers=[Management Center Publisher, JMX Publisher]
+2025-01-27 08:03:00 DEBUG c.h.s.i.o.impl.OperationExecutorImpl - [127.0.0.1]:5701 [dev] [5.5.0] Starting 20 partition threads and 11 generic threads (1 dedicated for priority tasks)
+2025-01-27 08:03:00 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:03:00 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:03:00 DEBUG c.h.i.p.InternalPartitionService - [127.0.0.1]:5701 [dev] [5.5.0] Adding Member [127.0.0.1]:5701 - f22f7eca-3b1a-4d93-926a-74bcddfaac2d this
+2025-01-27 08:03:00 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] TcpIpConnectionManager configured with Non Blocking IO-threading model: 4 input threads and 4 output threads
+2025-01-27 08:03:00 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] write through enabled:true
+2025-01-27 08:03:00 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] IO threads selector mode is SELECT
+2025-01-27 08:03:00 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:03:00 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is local? true
+2025-01-27 08:03:00 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:03:00 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:03:00 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] NOT sending master question to blacklisted endpoints: {}
+2025-01-27 08:03:00 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5703
+2025-01-27 08:03:00 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:00 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5702
+2025-01-27 08:03:00 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:00 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:03:00 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:03:01 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:03:01 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] This node will assume master role since none of the possible members accepted join request.
+2025-01-27 08:03:01 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to [127.0.0.1]:5701
+2025-01-27 08:03:01 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Local member list join version is set to 1
+2025-01-27 08:03:01 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] PostJoin master: [127.0.0.1]:5701, isMaster: true
+2025-01-27 08:03:01 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - f22f7eca-3b1a-4d93-926a-74bcddfaac2d this
+]
+
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:01 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:03:02 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 6.705 seconds (process running for 7.817)
+2025-01-27 08:03:02 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 6.705 seconds (process running for 7.817)
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:03:04 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:03:04 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:03:04 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:03:04 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:03:04 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:03:04 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:03:04 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:03:04 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:03:04 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:03:04 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:03:04 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:03:04 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 55 ms.
+2025-01-27 08:03:04 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:03:12 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 19092 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:03:12 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 19092 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:03:12 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:03:12 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:03:12 DEBUG c.h.i.c.AbstractYamlConfigRootTagRecognizer - An exception is encountered while processing the provided YAML configuration
+com.hazelcast.internal.yaml.YamlException: An error occurred while loading and parsing the YAML stream
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:55)
+	at com.hazelcast.internal.config.AbstractYamlConfigRootTagRecognizer.isRecognized(AbstractYamlConfigRootTagRecognizer.java:60)
+	at com.hazelcast.internal.config.AbstractConfigRecognizer.isRecognized(AbstractConfigRecognizer.java:40)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition$HazelcastClientValidation.clientConfigOutcome(HazelcastClientConfigAvailableCondition.java:66)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition.getMatchOutcome(HazelcastClientConfigAvailableCondition.java:49)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:233)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:413)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:836)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:833)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:803)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at my.etiqa.demo.EtiqaProductApplication.main(EtiqaProductApplication.java:25)
+Caused by: com.hazelcast.internal.yaml.YamlException: The provided document is not a Map, and rootName is defined.
+	at com.hazelcast.internal.yaml.YamlDomBuilder.build(YamlDomBuilder.java:40)
+	at com.hazelcast.internal.yaml.YamlLoader.buildDom(YamlLoader.java:151)
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:53)
+	... 35 common frames omitted
+2025-01-27 08:03:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:03:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:03:14 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:03:14 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:03:14 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:03:15 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:03:15 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:03:15 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Trying to bind inet socket address: 0.0.0.0/0.0.0.0:5701
+2025-01-27 08:03:15 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Bind successful to inet socket address: /[0:0:0:0:0:0:0:0]:5701
+2025-01-27 08:03:15 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Picked [127.0.0.1]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2025-01-27 08:03:15 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:03:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:03:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:03:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:03:15 DEBUG com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Configured Hazelcast Serialization version: 1
+2025-01-27 08:03:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:03:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:03:15 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:15 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:15 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:15 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:03:15 DEBUG c.h.i.m.impl.MetricsConfigHelper - [127.0.0.1]:5701 [dev] [5.5.0] Collecting debug metrics and sending to diagnostics is disabled
+2025-01-27 08:03:15 DEBUG c.h.s.i.o.impl.BackpressureRegulator - [127.0.0.1]:5701 [dev] [5.5.0] Backpressure is disabled
+2025-01-27 08:03:15 DEBUG c.h.s.i.o.i.InboundResponseHandlerSupplier - [127.0.0.1]:5701 [dev] [5.5.0] Running with 2 response threads
+2025-01-27 08:03:16 DEBUG c.h.i.s.tcp.LocalAddressRegistry - [127.0.0.1]:5701 [dev] [5.5.0] LinkedAddresses{primaryAddress=[127.0.0.1]:5701, allLinkedAddresses=[[fe80:0:0:0:936e:c24d:68a8:779b%eth3]:5701, [fe80:0:0:0:600e:e95d:ab13:8224%eth21]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16%eth4]:5701, [192.168.0.105]:5701, [fe80:0:0:0:d76c:b378:f034:a23%wlan3]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5]:5701, [fe80:0:0:0:d76c:b378:f034:a23]:5701, [fe80:0:0:0:600e:e95d:ab13:8224]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2]:5701, [172.21.48.1]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2%wlan4]:5701, [172.20.144.1]:5701, [fe80:0:0:0:936e:c24d:68a8:779b]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2%wlan0]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5%eth11]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16]:5701, [127.0.0.1]:5701, [0:0:0:0:0:0:0:1]:5701]} are registered for the local member with local uuid=37223d87-5ac6-4e99-8f1c-973791750d6d
+2025-01-27 08:03:16 DEBUG com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] 
+Security recommendations and their status:
+  [ ] Use a custom cluster name
+  [X] Disable member multicast discovery/join method
+  [ ] Use advanced networking, separate client and member sockets
+  [ ] Bind Server sockets to a single network interface (disable hazelcast.socket.server.bind.any)
+  [ ] Allow Management Center operations only from specified remote addresses (use management-center/trusted-interfaces configuration)
+  [X] Disable scripting in the Management Center
+  [X] Disable console in the Management Center
+  [ ] Enable Security (Enterprise)
+  [ ] Use TLS communication protection (Enterprise)
+  [ ] Enable auditlog (Enterprise)
+Check the hazelcast-security-hardened.xml/yaml example config file to find why and how to configure these security related settings.
+
+2025-01-27 08:03:16 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:03:17 DEBUG c.h.i.metrics.impl.MetricsService - [127.0.0.1]:5701 [dev] [5.5.0] Configuring metrics collection, collection interval=5 seconds, retention=5 seconds, publishers=[Management Center Publisher, JMX Publisher]
+2025-01-27 08:03:17 DEBUG c.h.s.i.o.impl.OperationExecutorImpl - [127.0.0.1]:5701 [dev] [5.5.0] Starting 20 partition threads and 11 generic threads (1 dedicated for priority tasks)
+2025-01-27 08:03:17 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:03:17 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:03:17 DEBUG c.h.i.p.InternalPartitionService - [127.0.0.1]:5701 [dev] [5.5.0] Adding Member [127.0.0.1]:5701 - 37223d87-5ac6-4e99-8f1c-973791750d6d this
+2025-01-27 08:03:17 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] TcpIpConnectionManager configured with Non Blocking IO-threading model: 4 input threads and 4 output threads
+2025-01-27 08:03:17 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] write through enabled:true
+2025-01-27 08:03:17 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] IO threads selector mode is SELECT
+2025-01-27 08:03:17 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:03:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is local? true
+2025-01-27 08:03:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:03:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:03:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] NOT sending master question to blacklisted endpoints: {}
+2025-01-27 08:03:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5703
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:17 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5702
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:17 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:03:17 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:17 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:03:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:03:18 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:03:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] This node will assume master role since none of the possible members accepted join request.
+2025-01-27 08:03:18 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:03:18 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to [127.0.0.1]:5701
+2025-01-27 08:03:18 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Local member list join version is set to 1
+2025-01-27 08:03:18 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] PostJoin master: [127.0.0.1]:5701, isMaster: true
+2025-01-27 08:03:18 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 37223d87-5ac6-4e99-8f1c-973791750d6d this
+]
+
+2025-01-27 08:03:18 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:03:18 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 7070 (http)
+2025-01-27 08:03:18 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 6.842 seconds (process running for 7.216)
+2025-01-27 08:03:18 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 6.842 seconds (process running for 7.216)
+2025-01-27 08:04:17 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Sending member list to the non-master nodes: 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 37223d87-5ac6-4e99-8f1c-973791750d6d this
+]
+
+2025-01-27 08:05:17 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Sending member list to the non-master nodes: 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 37223d87-5ac6-4e99-8f1c-973791750d6d this
+]
+
+2025-01-27 08:06:00 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:06:00 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:06:00 INFO  o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 08:06:00 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:06:00 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:00 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:06:00 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:06:00 INFO  o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-01-27 08:06:00 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:00 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:06:00 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 15 ms.
+2025-01-27 08:06:00 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:06:20 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 67040 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:06:20 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 67040 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:06:20 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:06:20 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:06:20 DEBUG c.h.i.c.AbstractYamlConfigRootTagRecognizer - An exception is encountered while processing the provided YAML configuration
+com.hazelcast.internal.yaml.YamlException: An error occurred while loading and parsing the YAML stream
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:55)
+	at com.hazelcast.internal.config.AbstractYamlConfigRootTagRecognizer.isRecognized(AbstractYamlConfigRootTagRecognizer.java:60)
+	at com.hazelcast.internal.config.AbstractConfigRecognizer.isRecognized(AbstractConfigRecognizer.java:40)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition$HazelcastClientValidation.clientConfigOutcome(HazelcastClientConfigAvailableCondition.java:66)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition.getMatchOutcome(HazelcastClientConfigAvailableCondition.java:49)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:233)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:413)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:836)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:833)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:803)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.hazelcast.internal.yaml.YamlException: The provided document is not a Map, and rootName is defined.
+	at com.hazelcast.internal.yaml.YamlDomBuilder.build(YamlDomBuilder.java:40)
+	at com.hazelcast.internal.yaml.YamlLoader.buildDom(YamlLoader.java:151)
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:53)
+	... 115 common frames omitted
+2025-01-27 08:06:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:06:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 165 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:06:21 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:06:22 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:06:23 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:06:24 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:06:24 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:06:24 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Trying to bind inet socket address: 0.0.0.0/0.0.0.0:5701
+2025-01-27 08:06:24 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Bind successful to inet socket address: /[0:0:0:0:0:0:0:0]:5701
+2025-01-27 08:06:24 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Picked [127.0.0.1]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2025-01-27 08:06:24 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:06:24 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:06:24 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:06:24 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:06:24 DEBUG com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Configured Hazelcast Serialization version: 1
+2025-01-27 08:06:24 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:06:24 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:06:24 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:24 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:24 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:24 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:24 DEBUG c.h.i.m.impl.MetricsConfigHelper - [127.0.0.1]:5701 [dev] [5.5.0] Collecting debug metrics and sending to diagnostics is disabled
+2025-01-27 08:06:24 DEBUG c.h.s.i.o.impl.BackpressureRegulator - [127.0.0.1]:5701 [dev] [5.5.0] Backpressure is disabled
+2025-01-27 08:06:24 DEBUG c.h.s.i.o.i.InboundResponseHandlerSupplier - [127.0.0.1]:5701 [dev] [5.5.0] Running with 2 response threads
+2025-01-27 08:06:24 DEBUG c.h.i.s.tcp.LocalAddressRegistry - [127.0.0.1]:5701 [dev] [5.5.0] LinkedAddresses{primaryAddress=[127.0.0.1]:5701, allLinkedAddresses=[[fe80:0:0:0:936e:c24d:68a8:779b%eth3]:5701, [fe80:0:0:0:600e:e95d:ab13:8224%eth21]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16%eth4]:5701, [192.168.0.105]:5701, [fe80:0:0:0:d76c:b378:f034:a23%wlan3]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5]:5701, [fe80:0:0:0:d76c:b378:f034:a23]:5701, [fe80:0:0:0:600e:e95d:ab13:8224]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2]:5701, [172.21.48.1]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2%wlan4]:5701, [172.20.144.1]:5701, [fe80:0:0:0:936e:c24d:68a8:779b]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2%wlan0]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5%eth11]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16]:5701, [127.0.0.1]:5701, [0:0:0:0:0:0:0:1]:5701]} are registered for the local member with local uuid=47a3d1f0-e8a5-4b58-b74b-e13b25d38802
+2025-01-27 08:06:25 DEBUG com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] 
+Security recommendations and their status:
+  [ ] Use a custom cluster name
+  [X] Disable member multicast discovery/join method
+  [ ] Use advanced networking, separate client and member sockets
+  [ ] Bind Server sockets to a single network interface (disable hazelcast.socket.server.bind.any)
+  [ ] Allow Management Center operations only from specified remote addresses (use management-center/trusted-interfaces configuration)
+  [X] Disable scripting in the Management Center
+  [X] Disable console in the Management Center
+  [ ] Enable Security (Enterprise)
+  [ ] Use TLS communication protection (Enterprise)
+  [ ] Enable auditlog (Enterprise)
+Check the hazelcast-security-hardened.xml/yaml example config file to find why and how to configure these security related settings.
+
+2025-01-27 08:06:25 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:06:25 DEBUG c.h.i.metrics.impl.MetricsService - [127.0.0.1]:5701 [dev] [5.5.0] Configuring metrics collection, collection interval=5 seconds, retention=5 seconds, publishers=[Management Center Publisher, JMX Publisher]
+2025-01-27 08:06:25 DEBUG c.h.s.i.o.impl.OperationExecutorImpl - [127.0.0.1]:5701 [dev] [5.5.0] Starting 20 partition threads and 11 generic threads (1 dedicated for priority tasks)
+2025-01-27 08:06:25 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:06:25 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:06:25 DEBUG c.h.i.p.InternalPartitionService - [127.0.0.1]:5701 [dev] [5.5.0] Adding Member [127.0.0.1]:5701 - 47a3d1f0-e8a5-4b58-b74b-e13b25d38802 this
+2025-01-27 08:06:25 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] TcpIpConnectionManager configured with Non Blocking IO-threading model: 4 input threads and 4 output threads
+2025-01-27 08:06:25 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] write through enabled:true
+2025-01-27 08:06:25 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] IO threads selector mode is SELECT
+2025-01-27 08:06:25 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:25 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is local? true
+2025-01-27 08:06:25 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:06:25 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:06:25 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] NOT sending master question to blacklisted endpoints: {}
+2025-01-27 08:06:25 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5703
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:25 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5702
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:25 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:06:25 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:25 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:26 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:06:26 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:06:26 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] This node will assume master role since none of the possible members accepted join request.
+2025-01-27 08:06:26 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to [127.0.0.1]:5701
+2025-01-27 08:06:26 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Local member list join version is set to 1
+2025-01-27 08:06:26 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] PostJoin master: [127.0.0.1]:5701, isMaster: true
+2025-01-27 08:06:26 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 47a3d1f0-e8a5-4b58-b74b-e13b25d38802 this
+]
+
+2025-01-27 08:06:26 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:06:26 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:26 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:26 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 7.098 seconds (process running for 8.42)
+2025-01-27 08:06:26 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 7.098 seconds (process running for 8.42)
+2025-01-27 08:06:27 INFO  c.h.i.diagnostics.HealthMonitor - [127.0.0.1]:5701 [dev] [5.5.0] The HealthMonitor has detected a high load on the system. For more detailed information,
+enable Diagnostics by adding the property -Dhazelcast.diagnostics.enabled=true
+2025-01-27 08:06:27 INFO  c.h.i.diagnostics.HealthMonitor - [127.0.0.1]:5701 [dev] [5.5.0] processors=20, physical.memory.total=31.7G, physical.memory.free=4.8G, swap.space.total=0, swap.space.free=0, heap.memory.used=37.4M, heap.memory.free=52.4M, heap.memory.total=120.0M, heap.memory.max=7.9G, heap.memory.used/total=31.18%, heap.memory.used/max=0.46%, minor.gc.count=13, minor.gc.time=68ms, major.gc.count=0, major.gc.time=0ms, load.process=0.00%, load.system=100.00%, load.systemAverage=n/a thread.count=74, thread.peakCount=75, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:06:32 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:06:32 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:06:32 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:06:32 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:06:32 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:06:32 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:06:32 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:32 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:06:32 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:06:32 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:32 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:06:32 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 32 ms.
+2025-01-27 08:06:32 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:06:40 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 45224 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:06:40 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 45224 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:06:40 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:06:40 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:06:40 DEBUG c.h.i.c.AbstractYamlConfigRootTagRecognizer - An exception is encountered while processing the provided YAML configuration
+com.hazelcast.internal.yaml.YamlException: An error occurred while loading and parsing the YAML stream
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:55)
+	at com.hazelcast.internal.config.AbstractYamlConfigRootTagRecognizer.isRecognized(AbstractYamlConfigRootTagRecognizer.java:60)
+	at com.hazelcast.internal.config.AbstractConfigRecognizer.isRecognized(AbstractConfigRecognizer.java:40)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition$HazelcastClientValidation.clientConfigOutcome(HazelcastClientConfigAvailableCondition.java:66)
+	at org.springframework.boot.autoconfigure.hazelcast.HazelcastClientConfigAvailableCondition.getMatchOutcome(HazelcastClientConfigAvailableCondition.java:49)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:233)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:413)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:347)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:603)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:836)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:833)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:803)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at my.etiqa.demo.EtiqaProductApplication.main(EtiqaProductApplication.java:25)
+Caused by: com.hazelcast.internal.yaml.YamlException: The provided document is not a Map, and rootName is defined.
+	at com.hazelcast.internal.yaml.YamlDomBuilder.build(YamlDomBuilder.java:40)
+	at com.hazelcast.internal.yaml.YamlLoader.buildDom(YamlLoader.java:151)
+	at com.hazelcast.internal.yaml.YamlLoader.load(YamlLoader.java:53)
+	... 35 common frames omitted
+2025-01-27 08:06:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:06:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:06:41 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:06:41 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:06:42 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:06:42 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:06:42 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:06:42 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Trying to bind inet socket address: 0.0.0.0/0.0.0.0:5701
+2025-01-27 08:06:42 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Bind successful to inet socket address: /[0:0:0:0:0:0:0:0]:5701
+2025-01-27 08:06:42 DEBUG c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Picked [127.0.0.1]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2025-01-27 08:06:42 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:06:42 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:06:42 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:06:42 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:06:42 DEBUG com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Configured Hazelcast Serialization version: 1
+2025-01-27 08:06:42 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:06:42 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:06:42 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:42 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:42 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.observer.JetObserverDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:42 DEBUG c.h.internal.util.ServiceLoader - The class com.hazelcast.jet.impl.metrics.JetMetricsDataSerializerHook does not implement the expected interface com.hazelcast.nio.serialization.SerializerHook
+2025-01-27 08:06:42 DEBUG c.h.i.m.impl.MetricsConfigHelper - [127.0.0.1]:5701 [dev] [5.5.0] Collecting debug metrics and sending to diagnostics is disabled
+2025-01-27 08:06:42 DEBUG c.h.s.i.o.impl.BackpressureRegulator - [127.0.0.1]:5701 [dev] [5.5.0] Backpressure is disabled
+2025-01-27 08:06:42 DEBUG c.h.s.i.o.i.InboundResponseHandlerSupplier - [127.0.0.1]:5701 [dev] [5.5.0] Running with 2 response threads
+2025-01-27 08:06:43 DEBUG c.h.i.s.tcp.LocalAddressRegistry - [127.0.0.1]:5701 [dev] [5.5.0] LinkedAddresses{primaryAddress=[127.0.0.1]:5701, allLinkedAddresses=[[fe80:0:0:0:936e:c24d:68a8:779b%eth3]:5701, [fe80:0:0:0:600e:e95d:ab13:8224%eth21]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16%eth4]:5701, [192.168.0.105]:5701, [fe80:0:0:0:d76c:b378:f034:a23%wlan3]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5]:5701, [fe80:0:0:0:d76c:b378:f034:a23]:5701, [fe80:0:0:0:600e:e95d:ab13:8224]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2]:5701, [172.21.48.1]:5701, [fe80:0:0:0:dd93:5abb:22bd:9dd2%wlan4]:5701, [172.20.144.1]:5701, [fe80:0:0:0:936e:c24d:68a8:779b]:5701, [fe80:0:0:0:db88:7f08:3ddf:b4d2%wlan0]:5701, [fe80:0:0:0:1caf:c538:2f0c:9aa5%eth11]:5701, [fe80:0:0:0:9bfc:1f2:d171:bb16]:5701, [127.0.0.1]:5701, [0:0:0:0:0:0:0:1]:5701]} are registered for the local member with local uuid=90909e78-5306-4857-8b9e-6c0dfeca2317
+2025-01-27 08:06:43 DEBUG com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] 
+Security recommendations and their status:
+  [ ] Use a custom cluster name
+  [X] Disable member multicast discovery/join method
+  [ ] Use advanced networking, separate client and member sockets
+  [ ] Bind Server sockets to a single network interface (disable hazelcast.socket.server.bind.any)
+  [ ] Allow Management Center operations only from specified remote addresses (use management-center/trusted-interfaces configuration)
+  [X] Disable scripting in the Management Center
+  [X] Disable console in the Management Center
+  [ ] Enable Security (Enterprise)
+  [ ] Use TLS communication protection (Enterprise)
+  [ ] Enable auditlog (Enterprise)
+Check the hazelcast-security-hardened.xml/yaml example config file to find why and how to configure these security related settings.
+
+2025-01-27 08:06:43 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:06:43 DEBUG c.h.i.metrics.impl.MetricsService - [127.0.0.1]:5701 [dev] [5.5.0] Configuring metrics collection, collection interval=5 seconds, retention=5 seconds, publishers=[Management Center Publisher, JMX Publisher]
+2025-01-27 08:06:43 DEBUG c.h.s.i.o.impl.OperationExecutorImpl - [127.0.0.1]:5701 [dev] [5.5.0] Starting 20 partition threads and 11 generic threads (1 dedicated for priority tasks)
+2025-01-27 08:06:43 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:06:43 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:06:43 DEBUG c.h.i.p.InternalPartitionService - [127.0.0.1]:5701 [dev] [5.5.0] Adding Member [127.0.0.1]:5701 - 90909e78-5306-4857-8b9e-6c0dfeca2317 this
+2025-01-27 08:06:43 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] TcpIpConnectionManager configured with Non Blocking IO-threading model: 4 input threads and 4 output threads
+2025-01-27 08:06:43 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] write through enabled:true
+2025-01-27 08:06:43 DEBUG c.h.i.networking.nio.NioNetworking - [127.0.0.1]:5701 [dev] [5.5.0] IO threads selector mode is SELECT
+2025-01-27 08:06:43 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:43 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is local? true
+2025-01-27 08:06:43 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:06:43 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:06:43 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] NOT sending master question to blacklisted endpoints: {}
+2025-01-27 08:06:43 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5703
+2025-01-27 08:06:43 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:43 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] Sending master question to [127.0.0.1]:5702
+2025-01-27 08:06:43 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:43 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:06:43 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:06:43 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:43 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:43 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:43 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:44 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:44 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:44 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is local? false
+2025-01-27 08:06:44 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is local? false
+2025-01-27 08:06:44 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] This node will assume master role since none of the possible members accepted join request.
+2025-01-27 08:06:44 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to [127.0.0.1]:5701
+2025-01-27 08:06:44 DEBUG c.h.i.cluster.impl.MembershipManager - [127.0.0.1]:5701 [dev] [5.5.0] Local member list join version is set to 1
+2025-01-27 08:06:44 DEBUG c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] PostJoin master: [127.0.0.1]:5701, isMaster: true
+2025-01-27 08:06:44 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 90909e78-5306-4857-8b9e-6c0dfeca2317 this
+]
+
+2025-01-27 08:06:44 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:06:44 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5703 streamId:-1 is not yet in progress
+2025-01-27 08:06:44 DEBUG c.h.i.s.t.TcpServerConnectionManager - [127.0.0.1]:5701 [dev] [5.5.0] Connection to: [127.0.0.1]:5702 streamId:-1 is not yet in progress
+2025-01-27 08:06:44 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 7070 (http)
+2025-01-27 08:06:44 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 5.372 seconds (process running for 5.704)
+2025-01-27 08:06:44 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 5.372 seconds (process running for 5.704)
+2025-01-27 08:06:56 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:06:56 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:06:56 INFO  o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 08:06:56 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:06:56 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:56 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:06:56 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:06:56 INFO  o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-01-27 08:06:56 DEBUG c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] Setting master address to null
+2025-01-27 08:06:56 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:06:56 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 8 ms.
+2025-01-27 08:06:56 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:07:11 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 912 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:07:11 INFO  m.e.d.EtiqaProductApplicationTests - Starting EtiqaProductApplicationTests using Java 17.0.11 with PID 912 (started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:07:11 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:07:11 INFO  m.e.d.EtiqaProductApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:07:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:07:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:07:13 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:07:13 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:07:14 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:07:15 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:07:15 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:07:15 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:07:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:07:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:07:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:07:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:07:15 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:07:16 INFO  com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2025-01-27 08:07:16 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:07:16 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:07:16 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:07:16 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:07:16 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:07:17 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 8518f29c-3b9d-4c6f-8dab-205867afb0b2 this
+]
+
+2025-01-27 08:07:17 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:07:17 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 6.91 seconds (process running for 8.047)
+2025-01-27 08:07:17 INFO  m.e.d.EtiqaProductApplicationTests - Started EtiqaProductApplicationTests in 6.91 seconds (process running for 8.047)
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Patching product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Replacing product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Updating product with ID 1...
+2025-01-27 08:07:19 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:07:19 ERROR m.etiqa.demo.service.ProductService - Error updating product: Product not found
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Adding a new product...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching product with ID 1 from cache or database...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Deleting product with ID 1...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:07:19 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:07:19 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:07:19 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:07:19 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:07:19 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:07:19 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:07:19 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:07:19 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 33 ms.
+2025-01-27 08:07:19 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
+2025-01-27 08:07:26 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 35604 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:07:26 INFO  m.etiqa.demo.EtiqaProductApplication - Starting EtiqaProductApplication using Java 17.0.11 with PID 35604 (D:\HCL_Hackaton\Etiqa\Product\target\classes started by Admin in D:\HCL_Hackaton\Etiqa\Product)
+2025-01-27 08:07:26 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:07:26 INFO  m.etiqa.demo.EtiqaProductApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-27 08:07:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-01-27 08:07:28 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109 ms. Found 1 R2DBC repository interface.
+2025-01-27 08:07:28 INFO  c.g.j.r.m.MysqlConnectionFactoryProvider - set jasync.mysql.CLIENT_FOUND_ROWS=true
+2025-01-27 08:07:28 INFO  c.g.jasync.sql.db.util.NettyUtils - jasync selected transport - nio
+2025-01-27 08:07:29 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-01-27 08:07:29 WARN  c.h.i.impl.HazelcastInstanceFactory - Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2025-01-27 08:07:29 INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [5.5.0] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [127.0.0.1]
+2025-01-27 08:07:29 INFO  com.hazelcast.system.logo - [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+2025-01-27 08:07:29 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2025-01-27 08:07:29 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+2025-01-27 08:07:29 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+2025-01-27 08:07:29 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2025-01-27 08:07:29 INFO  com.hazelcast.system - [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2025-01-27 08:07:30 INFO  com.hazelcast.system.security - [127.0.0.1]:5701 [dev] [5.5.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2025-01-27 08:07:30 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+2025-01-27 08:07:30 INFO  c.h.internal.diagnostics.Diagnostics - [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2025-01-27 08:07:30 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+2025-01-27 08:07:30 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5702 is added to the blacklist.
+2025-01-27 08:07:30 INFO  c.h.i.cluster.impl.TcpIpJoiner - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5703 is added to the blacklist.
+2025-01-27 08:07:31 INFO  c.h.internal.cluster.ClusterService - [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - ee6b9e23-2d8e-45c3-8e12-36330a791fd6 this
+]
+
+2025-01-27 08:07:31 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+2025-01-27 08:07:31 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 7070 (http)
+2025-01-27 08:07:31 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 5.257 seconds (process running for 5.621)
+2025-01-27 08:07:31 INFO  m.etiqa.demo.EtiqaProductApplication - Started EtiqaProductApplication in 5.257 seconds (process running for 5.621)
+2025-01-27 08:07:41 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 858 ms
+2025-01-27 08:07:55 DEBUG o.s.api.AbstractOpenApiResource - Fetching openApi document from cache
+2025-01-27 08:07:58 DEBUG o.s.api.AbstractOpenApiResource - Fetching openApi document from cache
+2025-01-27 08:09:26 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:09:26 INFO  m.etiqa.demo.service.ProductService - Fetching all products from the database...
+2025-01-27 08:09:35 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Running shutdown hook... Current node state: ACTIVE
+2025-01-27 08:09:35 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTTING_DOWN
+2025-01-27 08:09:35 INFO  o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 08:09:35 WARN  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Terminating forcefully...
+2025-01-27 08:09:35 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down connection manager...
+2025-01-27 08:09:35 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Shutting down node engine...
+2025-01-27 08:09:35 INFO  o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-01-27 08:09:35 INFO  c.h.instance.impl.NodeExtension - [127.0.0.1]:5701 [dev] [5.5.0] Destroying node NodeExtension.
+2025-01-27 08:09:35 INFO  com.hazelcast.instance.impl.Node - [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Shutdown is completed in 18 ms.
+2025-01-27 08:09:35 INFO  com.hazelcast.core.LifecycleService - [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is SHUTDOWN
